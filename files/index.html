@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kamila Gonzalez | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-black text-white font-sans">
@@ -23,43 +23,62 @@
       <button id="menu-button" class="text-white focus:outline-none">☰</button>
     </div>
   </header>
+  <div id="mobile-menu" class="hidden md:hidden px-6 py-4 space-y-2">
+    <a href="index.html#work" class="block hover:text-yellow-400">Work</a>
+    <a href="about.html" class="block hover:text-yellow-400">About</a>
+    <a href="contact.html" class="block hover:text-yellow-400">Contact</a>
+  </div>
 
   <section class="flex flex-col justify-center items-center h-screen text-center">
     <img src="K-logo.png" alt="Logo" class="h-40 logo-3d mb-6">
-    <h1 class="text-4xl md:text-6xl font-serif font-semibold leading-tight">
-      Kamila Gonzalez.<br /> Graphic Designer.
+    <h1 class="text-4xl md:text-6xl font-sans-serif font-semibold leading-tight">
+      Kamila Gonzalez
     </h1>
   </section>
 
-  <section id="work" class="px-6 md:px-12 py-24">
-    <h2 class="text-3xl font-bold mb-12 text-center">My Work</h2>
-    <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-      <div class="break-inside-avoid bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-        <a href="project1.html">
-          <img src="./images/type-hero.jpg" alt="Deck of Cards" class="w-full">
-          <div class="p-4 text-black">
-            <h3 class="text-xl font-bold">Deck of Cards</h3>
-          </div>
-        </a>
-      </div>
-      <div class="break-inside-avoid bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-        <a href="project2.html">
-          <img src="./images/project2.jpg" alt="Ad Campaign" class="w-full">
-          <div class="p-4 text-black">
-            <h3 class="text-xl font-bold">Ad Campaign</h3>
-          </div>
-        </a>
-      </div>
-      <!-- Add more projects in the same format -->
+<section class="text-center py-24">
+  <h2 class="text-xl font-semibold mb-10 tracking-wide">What I do best</h2>
+  <div class="flex flex-wrap justify-center gap-8 text-2xl font-medium">
+    <div class="relative">
+      <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-sm w-6 h-6 rounded-full border 	border-white flex items-center justify-center">1</span>
+      Branding
     </div>
-  </section>
+    <div class="relative">
+      <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-sm w-6 h-6 rounded-full border 	border-white flex items-center justify-center">2</span>
+      Advertising
+    </div>
+    <div class="relative">
+      <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-sm w-6 h-6 rounded-full border 	border-white flex items-center justify-center">3</span>
+      Editorial
+    </div>
+    <!-- Add others with same structure -->
+  </div>
+</section>
 
-  <section class="text-center px-6 md:px-20 py-24 text-xl leading-relaxed">
-    <p class="font-semibold">My work is bold and confident,</p>
-    <p>often featuring <span class="italic">typography at the forefront</span><br>
-    of <span class="italic">colorful designs</span> and <span class="italic">functional ideation</span>,</p>
-    <p class="mt-6 text-2xl font-bold">Soooo, Let's Chat :)</p>
-  </section>
+
+  <section id="work" class="bg-black text-white px-6 md:px-12 py-24">
+  <h2 class="text-3xl font-bold mb-12 text-center">My Work</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+   <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+  	<img src="./images/type-hero.jpg" alt="Deck of Cards" class="w-full">
+  	<div class="p-4 text-black">
+    	<h3 class="text-xl font-bold">Deck of Cards</h3>
+    	<a href="project1.html" class="text-sm underline mt-1 block">View Project</a>
+   </div>
+  </div>
+
+    <!-- Repeat for other projects -->
+  </div>
+</section>
+
+
+<section class="text-center px-6 md:px-20 py-24 text-xl leading-relaxed">
+  <p class="font-semibold">My work is bold and confident,</p>
+  <p>often featuring <span class="italic">typography at the forefront</span><br>
+  of <span class="italic">colorful designs</span> and <span class="italic">functional ideation</span>,</p>
+  <p class="mt-6 text-2xl font-bold">Soooo, Let's Chat :)</p>
+</section>
+
 
   <script>
     document.getElementById('menu-button').addEventListener('click', function () {
